@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            text-align: center;
+            background: radial-gradient(circle at 50.4% 50.5%, rgb(134, 129, 131) 0%, rgb(79, 129, 236) 90%);
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2); 
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 10px 15px; 
+            border-radius: 5px; 
+        }
+
+        nav a:hover {
+            color: black;
+            background-color: white;
+        }
+        h1 {
+            color: #000;
+            font-size: 2.5em;
+            margin-top: 15%;
+            font-style: italic;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            color: white;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 13%;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Media query for smaller devices */
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 15px;
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 2em;
+                margin-top: 20%;
+            }
+
+            h4 {
+                font-size: 1.2em;
+            }
+
+            footer {
+                margin-top: 20%;
+            }
+        }
+
+        /* Media query for extra small devices */
+        @media (max-width: 480px) {
+            nav a {
+                margin: 0 10px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+                margin-top: 30%;
+            }
+
+            h4 {
+                font-size: 1em;
+            }
+
+            footer {
+                margin-top: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       
+        <a href="homepage.html">Homepage</a>
+        <a href="#">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <h1>Home Page</h1>
+    <h4>Welcome to Team Envisioneers.</h4>
+    <footer>
+        <h3>&copy; 2024 Team Envisioneers. All rights reserved.</h3>
+    </footer>
+</body>
+</html>
