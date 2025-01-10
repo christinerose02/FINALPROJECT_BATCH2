@@ -245,7 +245,7 @@ function signInWithGoogle() {
 function logout() {
   auth.signOut()
     .then(() => {
-      window.location.href = 'login.html';
+      window.location.href = 'loginform.html';
     })
     .catch((error) => {
       console.error('Logout failed:', error);
