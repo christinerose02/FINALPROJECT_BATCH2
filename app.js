@@ -55,7 +55,7 @@ export function registerUser(email, password, username, role) {
     })
     .then(() => {
       alert('Registration successful!');
-      window.location.href = 'login.html';
+      window.location.href = 'loginform.html';
     })
     .catch((error) => {
       alert('Registration failed: ' + error.message);
