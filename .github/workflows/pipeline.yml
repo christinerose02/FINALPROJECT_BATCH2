@@ -1,0 +1,35 @@
+name: Firebase Code Check Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Trigger the pipeline on pushes to the main branch
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Node.js (required for Firebase CLI)
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # Use Node.js version 18 or later
+
+    # Step 3: Install dependencies (only if needed, based on your project)
+    - name: Install dependencies
+      run: npm install
+
+    # Step 4: Authenticate with Firebase (optional, for accessing Firebase database)
+    - name: Authenticate with Firebase
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      run: echo "Authenticated with Firebase"
+
+    # Step 5: Run your custom checks or tests
+    - name: Run Tests or Code Linting
+      run: npm test  # You can replace this with your specific code quality checks, e.g., linting
