@@ -1,0 +1,117 @@
+/* Container styles */
+.container {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 1000px;
+    margin: auto;
+    width: 90%;
+    
+  }
+  
+  /* Header styles */
+  h1 {
+    text-align: center;
+    color: #4CAF50; /* A pleasant green color */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Paragraph styles */
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 1.5rem;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  td {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Hover effect for table rows */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      width: 100%;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  
+    th, td {
+      padding: 10px;
+    }
+  }
+  
+  /*HERE IS JUST A TEST*/

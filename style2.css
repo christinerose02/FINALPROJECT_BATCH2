@@ -49,7 +49,7 @@ body {
 
 /* Container styles */
 .container {
-    max-width: 800px;
+    max-width: 750px;
     margin: 50px auto;
     padding: 20px;
     background: #fff;
@@ -58,6 +58,12 @@ body {
     text-align: center;
 }
 
+.container ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    
+}
 .container h1 {
     font-size: 2.9em;
     margin-bottom: 20px;
